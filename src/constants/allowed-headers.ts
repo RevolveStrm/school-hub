@@ -1,5 +1,1 @@
-export const allowedHeaders = [
-  "GET",
-  "POST",
-  "DELETE"
-]
+export const allowedHeaders = ["GET", "POST", "DELETE"];

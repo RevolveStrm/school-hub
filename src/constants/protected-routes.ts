@@ -1,3 +1,1 @@
-export const protectedRoutes: string[] = [
-  
-];
+export const protectedRoutes: string[] = [];

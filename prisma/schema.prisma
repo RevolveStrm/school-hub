@@ -19,6 +19,11 @@ enum Role {
   ADMIN
 }
 
+enum ConfirmationTokenType {
+  CONFIRM_EMAIL
+  FORGOT_PASSWORD
+}
+
 enum AttendanceStatus {
   PRESENT
   ABSENT
@@ -44,8 +49,6 @@ model User {
 
   role Role
 
-  confirmationToken ConfirmationToken?
-
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
@@ -55,22 +58,26 @@ model User {
   attendance     Attendance[]
   teacherProfile TeacherProfile?
 
+  confirmationTokens ConfirmationToken[]
+
   @@index([email])
   @@map("users")
 }
 
 model ConfirmationToken {
-  id        String  @id @default(uuid())
-  token     String  @unique
-  isExpired Boolean @default(false) @map("is_expired")
+  id        String                @id @default(uuid())
+  token     String                @unique
+  isExpired Boolean               @default(false) @map("is_expired")
+  type      ConfirmationTokenType @default(CONFIRM_EMAIL)
 
-  expiresAt DateTime? @map("expires_at")
-  createdAt DateTime  @default(now()) @map("created_at")
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now()) @map("created_at")
 
-  userId String @unique
+  userId String @map("user_id")
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  @@index([token])
+  @@index([userId, token])
+  @@map("confirmation_token")
 }
 
 model TeacherProfile {
