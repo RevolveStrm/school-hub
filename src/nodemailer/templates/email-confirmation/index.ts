@@ -2,15 +2,15 @@ import Handlebars from "handlebars";
 import templateSource from "./source";
 
 interface EmailConfirmationData {
-	username: string;
-	confirmationUrl: string;
+  username: string;
+  confirmationUrl: string;
 }
 
 export default function (
-	data: EmailConfirmationData,
-	source: string = templateSource,
+  data: EmailConfirmationData,
+  source: string = templateSource,
 ): string {
-	const template = Handlebars.compile(source);
+  const template = Handlebars.compile(source);
 
-	return template(data);
+  return template(data);
 }

@@ -1,459 +1,459 @@
 {
-	"users": [
-		{
-			"id": "32f8765f-28d6-426f-8b8a-b790a010f4e4",
-			"email": "user0@mail.com",
-			"username": "user0",
-			"password": "hashed_password",
-			"role": "ADMIN",
-			"createdAt": "2025-06-30T16:55:23.484800Z",
-			"updatedAt": "2025-01-10T09:52:23.484843Z"
-		},
-		{
-			"id": "cba4f899-57b6-42a1-bd7f-906a5ecd9632",
-			"email": "user1@mail.com",
-			"username": "user1",
-			"password": "hashed_password",
-			"role": "STUDENT",
-			"createdAt": "2025-07-07T18:05:23.485206Z",
-			"updatedAt": "2025-01-26T01:04:23.485324Z"
-		},
-		{
-			"id": "a730dc22-24c1-4080-8650-f281e778aa31",
-			"email": "user2@mail.com",
-			"username": "user2",
-			"password": "hashed_password",
-			"role": "ADMIN",
-			"createdAt": "2025-01-21T17:40:23.485588Z",
-			"updatedAt": "2025-05-15T23:15:23.485635Z"
-		},
-		{
-			"id": "a906a179-83b4-49cf-9eb8-837377dad7de",
-			"email": "user3@mail.com",
-			"username": "user3",
-			"password": "hashed_password",
-			"role": "STUDENT",
-			"createdAt": "2025-05-30T03:02:23.485938Z",
-			"updatedAt": "2024-08-19T15:04:23.485960Z"
-		},
-		{
-			"id": "7656b812-cbb4-47e4-b03e-24ca4829b971",
-			"email": "user4@mail.com",
-			"username": "user4",
-			"password": "hashed_password",
-			"role": "STUDENT",
-			"createdAt": "2024-11-27T18:19:23.487008Z",
-			"updatedAt": "2025-07-23T16:32:23.487044Z"
-		},
-		{
-			"id": "dc58a93f-e0b3-4871-b422-5b1511d637ad",
-			"email": "user5@mail.com",
-			"username": "user5",
-			"password": "hashed_password",
-			"role": "STUDENT",
-			"createdAt": "2025-06-18T02:00:23.487906Z",
-			"updatedAt": "2025-07-20T02:42:23.487928Z"
-		},
-		{
-			"id": "52b6e769-c7d5-4769-8768-64f1675b8b37",
-			"email": "user6@mail.com",
-			"username": "user6",
-			"password": "hashed_password",
-			"role": "ADMIN",
-			"createdAt": "2025-03-11T05:17:23.488370Z",
-			"updatedAt": "2025-07-03T00:08:23.488392Z"
-		},
-		{
-			"id": "6f9e9e48-c398-437d-928d-7b94d7fbfb07",
-			"email": "user7@mail.com",
-			"username": "user7",
-			"password": "hashed_password",
-			"role": "ADMIN",
-			"createdAt": "2024-11-22T16:11:23.488672Z",
-			"updatedAt": "2025-01-29T10:54:23.488685Z"
-		},
-		{
-			"id": "11e0c4f1-9822-466f-8fbc-8845254be98d",
-			"email": "user8@mail.com",
-			"username": "user8",
-			"password": "hashed_password",
-			"role": "TEACHER",
-			"createdAt": "2024-11-04T07:34:23.488737Z",
-			"updatedAt": "2024-12-15T04:49:23.488747Z"
-		},
-		{
-			"id": "d38cffed-6b93-4a51-bf9d-465b696d99ea",
-			"email": "user9@mail.com",
-			"username": "user9",
-			"password": "hashed_password",
-			"role": "STUDENT",
-			"createdAt": "2025-07-28T20:00:23.488796Z",
-			"updatedAt": "2024-10-20T14:52:23.488803Z"
-		}
-	],
-	"teacher_profiles": [
-		{
-			"id": "4d81a880-c231-4376-8f2b-c646390cf79c",
-			"bio": "I am teacher 0",
-			"skills": ["math", "science"],
-			"verified": true,
-			"userId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		}
-	],
-	"courses": [
-		{
-			"id": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"name": "Course 0",
-			"description": "Description for course 0",
-			"price": 99.83,
-			"createdAt": "2025-05-26T02:21:23.489431Z",
-			"updatedAt": "2024-09-17T01:10:23.489449Z",
-			"teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		},
-		{
-			"id": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"name": "Course 1",
-			"description": "Description for course 1",
-			"price": 25.62,
-			"createdAt": "2024-08-14T04:37:23.489504Z",
-			"updatedAt": "2025-07-20T13:38:23.489515Z",
-			"teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		},
-		{
-			"id": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"name": "Course 2",
-			"description": "Description for course 2",
-			"price": 81.8,
-			"createdAt": "2025-02-15T07:14:23.489564Z",
-			"updatedAt": "2024-10-05T18:55:23.489573Z",
-			"teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		},
-		{
-			"id": "bab0c23f-7372-4a27-b3ad-5c100899607b",
-			"name": "Course 3",
-			"description": "Description for course 3",
-			"price": 73.23,
-			"createdAt": "2025-07-30T05:30:23.489618Z",
-			"updatedAt": "2025-04-22T00:59:23.489628Z",
-			"teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		},
-		{
-			"id": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
-			"name": "Course 4",
-			"description": "Description for course 4",
-			"price": 29.47,
-			"createdAt": "2025-03-07T21:33:23.489669Z",
-			"updatedAt": "2025-03-15T01:41:23.489675Z",
-			"teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
-		}
-	],
-	"lessons": [
-		{
-			"id": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
-			"title": "Lesson 0",
-			"scheduledAt": "2024-12-31T02:41:23.489911Z",
-			"durationMin": 60,
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
-		},
-		{
-			"id": "24f9052d-f0d5-4965-a31d-fe7772f003f2",
-			"title": "Lesson 1",
-			"scheduledAt": "2024-08-25T03:00:23.489952Z",
-			"durationMin": 30,
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
-		},
-		{
-			"id": "5d00d26d-01c8-4fd2-ba67-4f1f4401af62",
-			"title": "Lesson 2",
-			"scheduledAt": "2025-02-08T18:01:23.489995Z",
-			"durationMin": 45,
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
-		},
-		{
-			"id": "3fbaee60-e996-45af-9feb-5dbe005d13d6",
-			"title": "Lesson 3",
-			"scheduledAt": "2025-04-14T17:40:23.490011Z",
-			"durationMin": 60,
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
-		},
-		{
-			"id": "30d32680-fd61-451b-9fd0-fa3409f7231c",
-			"title": "Lesson 4",
-			"scheduledAt": "2025-05-18T09:18:23.490027Z",
-			"durationMin": 45,
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
-		},
-		{
-			"id": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
-			"title": "Lesson 5",
-			"scheduledAt": "2025-01-28T00:38:23.490041Z",
-			"durationMin": 60,
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
-		},
-		{
-			"id": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
-			"title": "Lesson 6",
-			"scheduledAt": "2025-04-02T16:32:23.490061Z",
-			"durationMin": 45,
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
-		},
-		{
-			"id": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
-			"title": "Lesson 7",
-			"scheduledAt": "2025-05-23T00:27:23.490086Z",
-			"durationMin": 60,
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
-		},
-		{
-			"id": "f807314d-7044-4795-b809-00f7f2a16eac",
-			"title": "Lesson 8",
-			"scheduledAt": "2024-10-04T16:48:23.490109Z",
-			"durationMin": 60,
-			"courseId": "bab0c23f-7372-4a27-b3ad-5c100899607b"
-		},
-		{
-			"id": "e13c107d-04f4-416d-850c-6699c8849dff",
-			"title": "Lesson 9",
-			"scheduledAt": "2024-07-31T02:35:23.490130Z",
-			"durationMin": 45,
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
-		},
-		{
-			"id": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
-			"title": "Lesson 10",
-			"scheduledAt": "2025-04-16T03:53:23.490150Z",
-			"durationMin": 60,
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
-		},
-		{
-			"id": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
-			"title": "Lesson 11",
-			"scheduledAt": "2025-01-30T18:23:23.490170Z",
-			"durationMin": 30,
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
-		},
-		{
-			"id": "a5cf5613-a12f-428e-8723-cd245a88daee",
-			"title": "Lesson 12",
-			"scheduledAt": "2024-11-20T03:52:23.490192Z",
-			"durationMin": 30,
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
-		},
-		{
-			"id": "25d852b0-cf07-46ac-a0b2-f3fab57479f0",
-			"title": "Lesson 13",
-			"scheduledAt": "2024-09-01T10:08:23.490211Z",
-			"durationMin": 45,
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
-		},
-		{
-			"id": "adf932f9-654a-4fde-a8fc-324ac01ff29d",
-			"title": "Lesson 14",
-			"scheduledAt": "2025-02-25T05:06:23.490224Z",
-			"durationMin": 45,
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
-		}
-	],
-	"student_on_courses": [
-		{
-			"id": "a1d882a9-6c70-4388-9758-f8e41fc4a599",
-			"createdAt": "2025-01-14T19:07:23.490433Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
-		},
-		{
-			"id": "fd4e3ff1-65b2-487b-965a-0e17caf54ad7",
-			"createdAt": "2025-02-25T18:28:23.490455Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "5a34b0bd-44e5-499f-b041-9be8bf570ead",
-			"createdAt": "2025-07-30T02:37:23.490469Z",
-			"courseId": "bab0c23f-7372-4a27-b3ad-5c100899607b",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "2f5ed66b-ccb7-452f-82fa-995c1ae019f1",
-			"createdAt": "2025-06-16T11:33:23.490511Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "078415c9-b32b-4923-a08a-bd12d2b0af80",
-			"createdAt": "2025-04-19T05:00:23.490526Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "d9ba9edd-8729-4a6b-a9f6-86f0d272473f",
-			"createdAt": "2024-10-18T02:37:23.490545Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "ac69614c-1ad3-401e-aab8-973e8fd5d6be",
-			"createdAt": "2024-09-03T11:54:23.490565Z",
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "996fda90-c5c9-4bb8-8d5a-94b0c6ac4c8e",
-			"createdAt": "2025-02-26T18:36:23.490592Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
-		},
-		{
-			"id": "1acdcd73-cf22-4aae-b57c-fefb25f982a9",
-			"createdAt": "2025-02-02T07:48:23.490614Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
-		}
-	],
-	"attendance": [
-		{
-			"id": "f3442923-33ae-436c-991a-81fb213c0dc6",
-			"status": "PRESENT",
-			"markedAt": "2025-02-24T06:45:23.491018Z",
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
-			"lessonId": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
-			"studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
-		},
-		{
-			"id": "4dd9e4ad-a453-49be-b8e9-4bd821c0655c",
-			"status": "PRESENT",
-			"markedAt": "2025-03-28T13:26:23.491075Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
-			"studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
-		},
-		{
-			"id": "6f0cab55-7128-4b08-a19c-1301909e3cd2",
-			"status": "ABSENT",
-			"markedAt": "2024-12-05T04:01:23.491095Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
-			"studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
-		},
-		{
-			"id": "9c630ab0-1a8b-44ba-9cf0-22880d104a16",
-			"status": "ABSENT",
-			"markedAt": "2025-01-24T00:45:23.491113Z",
-			"courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
-			"lessonId": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "7e2e1228-cdd7-48d3-8ef1-816b8037c607",
-			"status": "ABSENT",
-			"markedAt": "2025-05-11T13:38:23.491130Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "a8cb104f-215f-4eac-9f99-dba21a591525",
-			"status": "PRESENT",
-			"markedAt": "2025-01-24T10:26:23.491150Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
-			"studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
-		},
-		{
-			"id": "d86bd566-bce6-4fc4-ad18-b0678a912a7f",
-			"status": "PRESENT",
-			"markedAt": "2025-03-23T10:53:23.491234Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "dec07b21-d5eb-4b28-876b-ec4f8673d621",
-			"status": "ABSENT",
-			"markedAt": "2024-11-10T03:19:23.491284Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "0c426290-0693-419c-9077-5e2501cd0f66",
-			"status": "PRESENT",
-			"markedAt": "2025-04-08T13:19:23.491305Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "08720b7b-f80e-4c0c-b6cf-76a30d654c4a",
-			"status": "PRESENT",
-			"markedAt": "2024-08-03T05:05:23.491321Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
-			"studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
-		},
-		{
-			"id": "d9874f03-d5f3-4a2f-a793-01bd47db3d4c",
-			"status": "ABSENT",
-			"markedAt": "2024-11-11T04:31:23.491339Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
-			"studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
-		},
-		{
-			"id": "c60f9184-30be-4000-b50e-9d894cead354",
-			"status": "ABSENT",
-			"markedAt": "2025-05-21T05:00:23.491354Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"lessonId": "a5cf5613-a12f-428e-8723-cd245a88daee",
-			"studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
-		},
-		{
-			"id": "bb0baeb5-b69b-4e05-a3a1-149cde01518b",
-			"status": "ABSENT",
-			"markedAt": "2025-02-25T22:55:23.491368Z",
-			"courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
-			"lessonId": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
-			"studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
-		},
-		{
-			"id": "fd3a9233-2a12-4b33-9ec2-0c585a03d9f2",
-			"status": "PRESENT",
-			"markedAt": "2025-05-04T13:02:23.491383Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"lessonId": "e13c107d-04f4-416d-850c-6699c8849dff",
-			"studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
-		},
-		{
-			"id": "10ffd785-f977-47a5-9e45-c7930709c147",
-			"status": "ABSENT",
-			"markedAt": "2025-03-29T13:34:23.491399Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"lessonId": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
-			"studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
-		},
-		{
-			"id": "66a1ca70-3207-4cdf-950e-4c1d33eea937",
-			"status": "PRESENT",
-			"markedAt": "2025-05-17T15:49:23.491756Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"lessonId": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
-			"studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
-		},
-		{
-			"id": "8005b0a3-8519-4068-8df4-d7967ac8373e",
-			"status": "PRESENT",
-			"markedAt": "2025-03-28T20:56:23.491831Z",
-			"courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
-			"lessonId": "a5cf5613-a12f-428e-8723-cd245a88daee",
-			"studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
-		},
-		{
-			"id": "cc800df7-8658-48c7-a930-d4f1a7f50405",
-			"status": "ABSENT",
-			"markedAt": "2025-03-18T02:17:23.491853Z",
-			"courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
-			"lessonId": "3fbaee60-e996-45af-9feb-5dbe005d13d6",
-			"studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
-		}
-	]
+  "users": [
+    {
+      "id": "32f8765f-28d6-426f-8b8a-b790a010f4e4",
+      "email": "user0@mail.com",
+      "username": "user0",
+      "password": "hashed_password",
+      "role": "ADMIN",
+      "createdAt": "2025-06-30T16:55:23.484800Z",
+      "updatedAt": "2025-01-10T09:52:23.484843Z"
+    },
+    {
+      "id": "cba4f899-57b6-42a1-bd7f-906a5ecd9632",
+      "email": "user1@mail.com",
+      "username": "user1",
+      "password": "hashed_password",
+      "role": "STUDENT",
+      "createdAt": "2025-07-07T18:05:23.485206Z",
+      "updatedAt": "2025-01-26T01:04:23.485324Z"
+    },
+    {
+      "id": "a730dc22-24c1-4080-8650-f281e778aa31",
+      "email": "user2@mail.com",
+      "username": "user2",
+      "password": "hashed_password",
+      "role": "ADMIN",
+      "createdAt": "2025-01-21T17:40:23.485588Z",
+      "updatedAt": "2025-05-15T23:15:23.485635Z"
+    },
+    {
+      "id": "a906a179-83b4-49cf-9eb8-837377dad7de",
+      "email": "user3@mail.com",
+      "username": "user3",
+      "password": "hashed_password",
+      "role": "STUDENT",
+      "createdAt": "2025-05-30T03:02:23.485938Z",
+      "updatedAt": "2024-08-19T15:04:23.485960Z"
+    },
+    {
+      "id": "7656b812-cbb4-47e4-b03e-24ca4829b971",
+      "email": "user4@mail.com",
+      "username": "user4",
+      "password": "hashed_password",
+      "role": "STUDENT",
+      "createdAt": "2024-11-27T18:19:23.487008Z",
+      "updatedAt": "2025-07-23T16:32:23.487044Z"
+    },
+    {
+      "id": "dc58a93f-e0b3-4871-b422-5b1511d637ad",
+      "email": "user5@mail.com",
+      "username": "user5",
+      "password": "hashed_password",
+      "role": "STUDENT",
+      "createdAt": "2025-06-18T02:00:23.487906Z",
+      "updatedAt": "2025-07-20T02:42:23.487928Z"
+    },
+    {
+      "id": "52b6e769-c7d5-4769-8768-64f1675b8b37",
+      "email": "user6@mail.com",
+      "username": "user6",
+      "password": "hashed_password",
+      "role": "ADMIN",
+      "createdAt": "2025-03-11T05:17:23.488370Z",
+      "updatedAt": "2025-07-03T00:08:23.488392Z"
+    },
+    {
+      "id": "6f9e9e48-c398-437d-928d-7b94d7fbfb07",
+      "email": "user7@mail.com",
+      "username": "user7",
+      "password": "hashed_password",
+      "role": "ADMIN",
+      "createdAt": "2024-11-22T16:11:23.488672Z",
+      "updatedAt": "2025-01-29T10:54:23.488685Z"
+    },
+    {
+      "id": "11e0c4f1-9822-466f-8fbc-8845254be98d",
+      "email": "user8@mail.com",
+      "username": "user8",
+      "password": "hashed_password",
+      "role": "TEACHER",
+      "createdAt": "2024-11-04T07:34:23.488737Z",
+      "updatedAt": "2024-12-15T04:49:23.488747Z"
+    },
+    {
+      "id": "d38cffed-6b93-4a51-bf9d-465b696d99ea",
+      "email": "user9@mail.com",
+      "username": "user9",
+      "password": "hashed_password",
+      "role": "STUDENT",
+      "createdAt": "2025-07-28T20:00:23.488796Z",
+      "updatedAt": "2024-10-20T14:52:23.488803Z"
+    }
+  ],
+  "teacher_profiles": [
+    {
+      "id": "4d81a880-c231-4376-8f2b-c646390cf79c",
+      "bio": "I am teacher 0",
+      "skills": ["math", "science"],
+      "verified": true,
+      "userId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    }
+  ],
+  "courses": [
+    {
+      "id": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "name": "Course 0",
+      "description": "Description for course 0",
+      "price": 99.83,
+      "createdAt": "2025-05-26T02:21:23.489431Z",
+      "updatedAt": "2024-09-17T01:10:23.489449Z",
+      "teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    },
+    {
+      "id": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "name": "Course 1",
+      "description": "Description for course 1",
+      "price": 25.62,
+      "createdAt": "2024-08-14T04:37:23.489504Z",
+      "updatedAt": "2025-07-20T13:38:23.489515Z",
+      "teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    },
+    {
+      "id": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "name": "Course 2",
+      "description": "Description for course 2",
+      "price": 81.8,
+      "createdAt": "2025-02-15T07:14:23.489564Z",
+      "updatedAt": "2024-10-05T18:55:23.489573Z",
+      "teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    },
+    {
+      "id": "bab0c23f-7372-4a27-b3ad-5c100899607b",
+      "name": "Course 3",
+      "description": "Description for course 3",
+      "price": 73.23,
+      "createdAt": "2025-07-30T05:30:23.489618Z",
+      "updatedAt": "2025-04-22T00:59:23.489628Z",
+      "teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    },
+    {
+      "id": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
+      "name": "Course 4",
+      "description": "Description for course 4",
+      "price": 29.47,
+      "createdAt": "2025-03-07T21:33:23.489669Z",
+      "updatedAt": "2025-03-15T01:41:23.489675Z",
+      "teacherId": "11e0c4f1-9822-466f-8fbc-8845254be98d"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
+      "title": "Lesson 0",
+      "scheduledAt": "2024-12-31T02:41:23.489911Z",
+      "durationMin": 60,
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
+    },
+    {
+      "id": "24f9052d-f0d5-4965-a31d-fe7772f003f2",
+      "title": "Lesson 1",
+      "scheduledAt": "2024-08-25T03:00:23.489952Z",
+      "durationMin": 30,
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
+    },
+    {
+      "id": "5d00d26d-01c8-4fd2-ba67-4f1f4401af62",
+      "title": "Lesson 2",
+      "scheduledAt": "2025-02-08T18:01:23.489995Z",
+      "durationMin": 45,
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
+    },
+    {
+      "id": "3fbaee60-e996-45af-9feb-5dbe005d13d6",
+      "title": "Lesson 3",
+      "scheduledAt": "2025-04-14T17:40:23.490011Z",
+      "durationMin": 60,
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
+    },
+    {
+      "id": "30d32680-fd61-451b-9fd0-fa3409f7231c",
+      "title": "Lesson 4",
+      "scheduledAt": "2025-05-18T09:18:23.490027Z",
+      "durationMin": 45,
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
+    },
+    {
+      "id": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
+      "title": "Lesson 5",
+      "scheduledAt": "2025-01-28T00:38:23.490041Z",
+      "durationMin": 60,
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
+    },
+    {
+      "id": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
+      "title": "Lesson 6",
+      "scheduledAt": "2025-04-02T16:32:23.490061Z",
+      "durationMin": 45,
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
+    },
+    {
+      "id": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
+      "title": "Lesson 7",
+      "scheduledAt": "2025-05-23T00:27:23.490086Z",
+      "durationMin": 60,
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa"
+    },
+    {
+      "id": "f807314d-7044-4795-b809-00f7f2a16eac",
+      "title": "Lesson 8",
+      "scheduledAt": "2024-10-04T16:48:23.490109Z",
+      "durationMin": 60,
+      "courseId": "bab0c23f-7372-4a27-b3ad-5c100899607b"
+    },
+    {
+      "id": "e13c107d-04f4-416d-850c-6699c8849dff",
+      "title": "Lesson 9",
+      "scheduledAt": "2024-07-31T02:35:23.490130Z",
+      "durationMin": 45,
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e"
+    },
+    {
+      "id": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
+      "title": "Lesson 10",
+      "scheduledAt": "2025-04-16T03:53:23.490150Z",
+      "durationMin": 60,
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
+    },
+    {
+      "id": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
+      "title": "Lesson 11",
+      "scheduledAt": "2025-01-30T18:23:23.490170Z",
+      "durationMin": 30,
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
+    },
+    {
+      "id": "a5cf5613-a12f-428e-8723-cd245a88daee",
+      "title": "Lesson 12",
+      "scheduledAt": "2024-11-20T03:52:23.490192Z",
+      "durationMin": 30,
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
+    },
+    {
+      "id": "25d852b0-cf07-46ac-a0b2-f3fab57479f0",
+      "title": "Lesson 13",
+      "scheduledAt": "2024-09-01T10:08:23.490211Z",
+      "durationMin": 45,
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8"
+    },
+    {
+      "id": "adf932f9-654a-4fde-a8fc-324ac01ff29d",
+      "title": "Lesson 14",
+      "scheduledAt": "2025-02-25T05:06:23.490224Z",
+      "durationMin": 45,
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0"
+    }
+  ],
+  "student_on_courses": [
+    {
+      "id": "a1d882a9-6c70-4388-9758-f8e41fc4a599",
+      "createdAt": "2025-01-14T19:07:23.490433Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
+    },
+    {
+      "id": "fd4e3ff1-65b2-487b-965a-0e17caf54ad7",
+      "createdAt": "2025-02-25T18:28:23.490455Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "5a34b0bd-44e5-499f-b041-9be8bf570ead",
+      "createdAt": "2025-07-30T02:37:23.490469Z",
+      "courseId": "bab0c23f-7372-4a27-b3ad-5c100899607b",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "2f5ed66b-ccb7-452f-82fa-995c1ae019f1",
+      "createdAt": "2025-06-16T11:33:23.490511Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "078415c9-b32b-4923-a08a-bd12d2b0af80",
+      "createdAt": "2025-04-19T05:00:23.490526Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "d9ba9edd-8729-4a6b-a9f6-86f0d272473f",
+      "createdAt": "2024-10-18T02:37:23.490545Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "ac69614c-1ad3-401e-aab8-973e8fd5d6be",
+      "createdAt": "2024-09-03T11:54:23.490565Z",
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "996fda90-c5c9-4bb8-8d5a-94b0c6ac4c8e",
+      "createdAt": "2025-02-26T18:36:23.490592Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
+    },
+    {
+      "id": "1acdcd73-cf22-4aae-b57c-fefb25f982a9",
+      "createdAt": "2025-02-02T07:48:23.490614Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "f3442923-33ae-436c-991a-81fb213c0dc6",
+      "status": "PRESENT",
+      "markedAt": "2025-02-24T06:45:23.491018Z",
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
+      "lessonId": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
+      "studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
+    },
+    {
+      "id": "4dd9e4ad-a453-49be-b8e9-4bd821c0655c",
+      "status": "PRESENT",
+      "markedAt": "2025-03-28T13:26:23.491075Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
+      "studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
+    },
+    {
+      "id": "6f0cab55-7128-4b08-a19c-1301909e3cd2",
+      "status": "ABSENT",
+      "markedAt": "2024-12-05T04:01:23.491095Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
+      "studentId": "cba4f899-57b6-42a1-bd7f-906a5ecd9632"
+    },
+    {
+      "id": "9c630ab0-1a8b-44ba-9cf0-22880d104a16",
+      "status": "ABSENT",
+      "markedAt": "2025-01-24T00:45:23.491113Z",
+      "courseId": "c1132600-c27a-4ee2-b20a-cfb5acb5abe0",
+      "lessonId": "4be5f77c-e69a-4149-94b7-7122b27ef0d5",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "7e2e1228-cdd7-48d3-8ef1-816b8037c607",
+      "status": "ABSENT",
+      "markedAt": "2025-05-11T13:38:23.491130Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "a8cb104f-215f-4eac-9f99-dba21a591525",
+      "status": "PRESENT",
+      "markedAt": "2025-01-24T10:26:23.491150Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
+      "studentId": "a906a179-83b4-49cf-9eb8-837377dad7de"
+    },
+    {
+      "id": "d86bd566-bce6-4fc4-ad18-b0678a912a7f",
+      "status": "PRESENT",
+      "markedAt": "2025-03-23T10:53:23.491234Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "897fc3c4-4f9c-4293-a59a-cdefb0479fea",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "dec07b21-d5eb-4b28-876b-ec4f8673d621",
+      "status": "ABSENT",
+      "markedAt": "2024-11-10T03:19:23.491284Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "0c426290-0693-419c-9077-5e2501cd0f66",
+      "status": "PRESENT",
+      "markedAt": "2025-04-08T13:19:23.491305Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "08720b7b-f80e-4c0c-b6cf-76a30d654c4a",
+      "status": "PRESENT",
+      "markedAt": "2024-08-03T05:05:23.491321Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "lessonId": "342b8f16-c700-4f1d-95e1-eec1996f2d8e",
+      "studentId": "7656b812-cbb4-47e4-b03e-24ca4829b971"
+    },
+    {
+      "id": "d9874f03-d5f3-4a2f-a793-01bd47db3d4c",
+      "status": "ABSENT",
+      "markedAt": "2024-11-11T04:31:23.491339Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "26add9f5-07f6-4dcf-ab07-1aba802a1cf1",
+      "studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
+    },
+    {
+      "id": "c60f9184-30be-4000-b50e-9d894cead354",
+      "status": "ABSENT",
+      "markedAt": "2025-05-21T05:00:23.491354Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "lessonId": "a5cf5613-a12f-428e-8723-cd245a88daee",
+      "studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
+    },
+    {
+      "id": "bb0baeb5-b69b-4e05-a3a1-149cde01518b",
+      "status": "ABSENT",
+      "markedAt": "2025-02-25T22:55:23.491368Z",
+      "courseId": "c8bdb110-447f-4b0f-b0d9-cd41eb59a5fa",
+      "lessonId": "c81d8169-0f96-44ae-9cd4-74fbf6912802",
+      "studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
+    },
+    {
+      "id": "fd3a9233-2a12-4b33-9ec2-0c585a03d9f2",
+      "status": "PRESENT",
+      "markedAt": "2025-05-04T13:02:23.491383Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "lessonId": "e13c107d-04f4-416d-850c-6699c8849dff",
+      "studentId": "dc58a93f-e0b3-4871-b422-5b1511d637ad"
+    },
+    {
+      "id": "10ffd785-f977-47a5-9e45-c7930709c147",
+      "status": "ABSENT",
+      "markedAt": "2025-03-29T13:34:23.491399Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "lessonId": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
+      "studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
+    },
+    {
+      "id": "66a1ca70-3207-4cdf-950e-4c1d33eea937",
+      "status": "PRESENT",
+      "markedAt": "2025-05-17T15:49:23.491756Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "lessonId": "7dd2ca6a-07d8-4080-b0e4-b9fa62a9030c",
+      "studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
+    },
+    {
+      "id": "8005b0a3-8519-4068-8df4-d7967ac8373e",
+      "status": "PRESENT",
+      "markedAt": "2025-03-28T20:56:23.491831Z",
+      "courseId": "0c9f7cd8-b508-44fd-9f75-ab6befa28dd8",
+      "lessonId": "a5cf5613-a12f-428e-8723-cd245a88daee",
+      "studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
+    },
+    {
+      "id": "cc800df7-8658-48c7-a930-d4f1a7f50405",
+      "status": "ABSENT",
+      "markedAt": "2025-03-18T02:17:23.491853Z",
+      "courseId": "d92fee31-954f-42e7-9b8b-6c9f86008f9e",
+      "lessonId": "3fbaee60-e996-45af-9feb-5dbe005d13d6",
+      "studentId": "d38cffed-6b93-4a51-bf9d-465b696d99ea"
+    }
+  ]
 }
