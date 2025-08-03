@@ -1,0 +1,155 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  STUDENT
+  TEACHER
+  ADMIN
+}
+
+enum AttendanceStatus {
+  PRESENT
+  ABSENT
+}
+
+enum EnrollmentStatus {
+  ENROLLED
+  COMPLETED
+  DROPPED
+}
+
+enum LessonType {
+  LECTURE
+  PRACTICE
+}
+
+model User {
+  id                String  @id @default(uuid())
+  email             String  @unique
+  username          String
+  password          String
+  is_email_verified Boolean @default(false)
+
+  role Role
+
+  confirmationToken ConfirmationToken?
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  teachingCourses Course[]
+  enrolledCourses StudentOnCourses[]
+
+  attendance     Attendance[]
+  teacherProfile TeacherProfile?
+
+  @@index([email])
+  @@map("users")
+}
+
+model ConfirmationToken {
+  id        String  @id @default(uuid())
+  token     String  @unique
+  isExpired Boolean @default(false) @map("is_expired")
+
+  expiresAt DateTime? @map("expires_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([token])
+}
+
+model TeacherProfile {
+  id String @id @default(uuid())
+
+  bio      String?
+  skills   String[]
+  verified Boolean  @default(false)
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("teacher_profile")
+}
+
+model Course {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+  price       Float
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  teacherId String? @map("teacher_id")
+  teacher   User?   @relation(fields: [teacherId], references: [id], onDelete: SetNull)
+
+  lessons          Lesson[]
+  attendance       Attendance[]
+  studentOnCourses StudentOnCourses[]
+
+  @@index([name])
+  @@map("courses")
+}
+
+model Lesson {
+  id          String     @id @default(uuid())
+  title       String
+  scheduledAt DateTime?  @map("scheduled_at")
+  durationMin Int        @map("duration_min")
+  type        LessonType @default(LECTURE)
+
+  courseId String @map("course_id")
+  course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  attendance Attendance[]
+
+  @@map("lessons")
+}
+
+model Attendance {
+  id       String           @id @default(uuid())
+  status   AttendanceStatus @default(PRESENT)
+  markedAt DateTime         @default(now()) @map("marked_at")
+
+  courseId String? @map("course_id")
+  course   Course? @relation(fields: [courseId], references: [id], onDelete: SetNull)
+
+  lessonId String? @map("lesson_id")
+  lesson   Lesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+
+  studentId String @map("student_id")
+  student   User   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@map("attendance")
+}
+
+model StudentOnCourses {
+  id String @id @default(uuid())
+
+  progress         Int?             @default(0)
+  enrollmentStatus EnrollmentStatus @default(ENROLLED) @map("enrollment_status")
+  createdAt        DateTime         @default(now()) @map("created_at")
+
+  courseId String @map("course_id")
+  course   Course @relation(fields: [courseId], references: [id])
+
+  studentId String @map("student_id")
+  student   User   @relation(fields: [studentId], references: [id])
+
+  @@map("student_on_courses")
+}
