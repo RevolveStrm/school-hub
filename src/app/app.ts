@@ -14,25 +14,25 @@ export const app = express();
 app.use(morgan(process.env.NODE_ENV === "production" ? "combined" : "dev"));
 
 app.use(
-	cors({
-		origin: process.env.SERVER_ORIGIN,
-		allowedHeaders: allowedHeaders,
-	}),
+  cors({
+    origin: process.env.SERVER_ORIGIN,
+    allowedHeaders: allowedHeaders,
+  }),
 );
 
 app.use(
-	helmet({
-		hidePoweredBy: true,
-	}),
+  helmet({
+    hidePoweredBy: true,
+  }),
 );
 
 app.use(
-	rateLimit({
-		windowMs: 15 * 60 * 1000,
-		limit: 1000,
-		standardHeaders: "draft-8",
-		legacyHeaders: false,
-	}),
+  rateLimit({
+    windowMs: 15 * 60 * 1000,
+    limit: 1000,
+    standardHeaders: "draft-8",
+    legacyHeaders: false,
+  }),
 );
 
 app.use(cookieParser());

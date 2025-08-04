@@ -8,21 +8,21 @@ import { userSignInSchema, userSignUpSchema } from "../schemas/user.schema";
 export const authRouter = Router();
 
 authRouter.post(
-	AuthRoutes.LOG_IN,
-	validateData(userSignInSchema),
-	authControllers.authLogIn,
+  AuthRoutes.LOG_IN,
+  validateData(userSignInSchema),
+  authControllers.authLogIn,
 );
 
 authRouter.post(
-	AuthRoutes.SIGN_UP,
-	validateData(userSignUpSchema),
-	authControllers.authSignUp,
+  AuthRoutes.SIGN_UP,
+  validateData(userSignUpSchema),
+  authControllers.authSignUp,
 );
 
 authRouter.post(
-	AuthRoutes.RESET_PASSWORD,
-	validateData(authResetPasswordSchema),
-	authControllers.authResetPassword,
+  AuthRoutes.RESET_PASSWORD,
+  validateData(authResetPasswordSchema),
+  authControllers.authResetPassword,
 );
 
 authRouter.get(AuthRoutes.LOG_OUT, authControllers.authLogOut);
